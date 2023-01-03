@@ -63,10 +63,35 @@ namespace Open_Lab_10._00
             }
  
         }
-        public void WriteInfo() 
+        public Book()
         {
-            Console.WriteLine($"Title:{title} \n Pages:{pages}\n Category:{category}\n Author:{author}\n ReleaseDate:{releaseDate}\n"); 
+         title = "-1";
+         pages = -1;
+         category = "-1";
+         author = "-1";
+         releaseDate = -1;
         }
+        public Book(string Title,int Pages)
+        {
+            title = Title;
+            pages = Pages;
+            category = "-1";
+            author = "-1";
+            releaseDate = -1;
+        }
+        public Book(string Title, int Pages,string Category,string Author,int ReleaseDate)
+        {
+            title = Title;
+            pages = Pages;
+            category = Category;
+            author = Author;
+            releaseDate = ReleaseDate;
+        }
+        public void WriteInfo()
+        {
+            Console.WriteLine($"Title:{title} \n Pages:{pages}\n Category:{category}\n Author:{author}\n ReleaseDate:{releaseDate}\n");
+        }
+
 
 
 
